@@ -13,7 +13,7 @@
   "author": "Mario Troiano",
   "license": "ISC",
   "publishConfig": {
-  "@mariotroiano:registry": "https://npm.pkg.github.com"
+  "@Mariotroiano:registry": "https://npm.pkg.github.com"
   },
   "bugs": {
     "url": "https://github.com/Mariotroiano/indio-services/issues"
