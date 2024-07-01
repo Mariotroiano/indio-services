@@ -1,0 +1,46 @@
+import { UniversalSiteType } from 'interfaces/UniversalSiteType';
+import { PhotoPayload } from './PhotoPayload';
+import { PayloadBase } from './PayloadBase';
+import { ParkPayload } from './ParkPayload';
+
+export class SiteTypePayload extends PayloadBase {
+  id: string;
+  park: ParkPayload;
+  parkId: string;
+  type: string;
+  name: string;
+  code: string;
+  description: string;
+  defaultArrivalTime: string;
+  defaultDepartureTime: string;
+  maxOccupantsPerSiteType: number;
+  maxOccupantsPerSiteTypeType: number;
+  yearlyGlAccountId: string;
+  monthlyGlAccountId: string;
+  weeklyGlAccountId: string;
+  dailyGlAccountId: string;
+  bookableBySiteType: boolean;
+  canBookOnline: boolean;
+  active: boolean;
+  siteType: SiteTypePayload;
+  primaryPhoto: PhotoPayload;
+  primaryPhotoUrl: string;
+  primaryPhotoId: string;
+  rateSummary: string;
+  universalSiteType: UniversalSiteType;
+  maxAdults: number;
+  maxChildren: number;
+  maxPets: number;
+  maxOccupancy: number;
+  leadDays: number;
+  minNights: number;
+  maxNights: number;
+  displayOrder: number;
+  utilityTypeIds: string[];
+  amenityList: string;
+  categoryList: string;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export const SiteTypePayloadAttributes = Object.keys(SiteTypePayload.new());
